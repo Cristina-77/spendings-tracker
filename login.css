@@ -1,0 +1,145 @@
+*{
+   
+    outline: none;
+    border: none;
+    text-decoration: none;
+    box-sizing: border-box;
+    
+}
+
+body{
+    background-image: url(background.gif);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10%;
+}
+
+
+.form{
+    background-color:rgb(137,136,135,0.695);
+    width:45%;
+    height:45%;
+    font-weight: bolder;
+    align-items: center;
+}
+
+.form img{
+    align-self: center;
+    width:40%;
+    height:50%;
+    
+}
+
+.form td p{
+    font-family:cursive;
+    font-size:xx-large;
+    font-weight: bolder;
+}
+
+.form table tr,td{
+    border: none;
+    text-align: center;
+}
+
+table{
+    width: 100%;
+}
+
+.form table tr td a{
+    font-size:large;
+    color: black;
+    
+}
+
+
+
+
+.popup1 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup1-content {
+    background-color: #c0b5b4;
+    padding: 2%;
+    border-radius: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.popup2 {
+    display: none; 
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+}
+
+.popup2-content {
+    background-color: #c0b5b4;
+    padding: 2%;
+    border-radius: 1%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.close-btn {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 24px;
+    cursor: pointer;
+    color: black;
+}
+.create{
+    font-size:medium;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.create label{
+    font-size:medium;
+}
+.create input{
+    border: 2px solid black;
+}
+
+.form-container {
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+}
+
+.form-group {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.form-group label {
+    width: 100px; 
+    text-align: right; 
+    padding-right: 10px;
+}
+
+.form-group input {
+    flex-grow: 1;
+}
+
+.form-group input[type="submit"] {
+    margin-left: 110px; 
+    cursor: pointer; 
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spendings</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="spendings.css">
+    
+    <script src="spendings.js" ></script>
+</head>
+<body>
+        
+    <nav id="navbar">
+        <ul>
+            <li>
+                <a href="home.html">
+                    <img src="home icon.png" >
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="spendings.html">
+                    <img src="spending icon.png" >
+                    <span>Spendings</span>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="graphs.html">
+                    <img src="graph icon.png" >
+                    <span>Graphs</span>
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="monthly-graphs.html">Monthly Graphs</a></li>
+                    <li><a href="category-graphs.html">Category Graphs</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button id="toggleBtn">☰</button>
+    </nav>
+
+    <table class="container">
+        <tr>
+            <td colspan="2" class="header">
+                <h1>Spendings Tracker</h1>
+            </td>
+        </tr>
+        <tr> 
+            <td class="form_tracker">
+                <form action="spendings.php" method="POST" class="tracker">
+                    <label for="date" name="date" id="date">Date: </label>
+                    <input type="date" id="date" name="date"><br>
+
+                    <label for="item" name="item">Item: </label>
+                    <input type="item" name="item" id="item"><br>
+
+                    <label for="category" name="category" >Category: </label>
+                    <select  name="category" id="category">
+                        <option value="groceries">Groceries</option>
+                        <option value="restaurants">Restaurants</option>
+                        <option value="shopping">Shopping</option>
+                        <option value="housing&bills">Housing&Bills</option>
+                        <option value="transport">Transport</option>
+                        <option value="other">Other</option>
+                    </select>
+
+                    <label for="price" name="price">Price: </label>
+                    <input type="number" id="price" name="price"><br>
+
+                    <input type="submit" class="submit" id="submit" name="submit">
+                    <a href="category-graphs.html">Show stats</a>
+                    <br><br><br>
+                    
+                </form>
+                <img src="spendings.jpg">
+            </td>
+            <td class="imagine">
+                <img src="imagine spendings.png">
+            </td>
+        </tr>
+    </table>
+
+</body>
+</html>

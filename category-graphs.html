@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Category Graphs</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="monthly.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="category.js" defer></script>
+</head>
+<body>
+        
+    <nav id="navbar">
+        <ul>
+            <li>
+                <a href="home.html">
+                    <img src="home icon.png" >
+                    <span>Home</span>
+                </a>
+            </li>
+            <li>
+                <a href="spendings.html">
+                    <img src="spending icon.png" >
+                    <span>Spendings</span>
+                </a>
+            </li>
+            <li class="dropdown">
+                <a href="graphs.html">
+                    <img src="graph icon.png" >
+                    <span>Graphs</span>
+                </a>
+                <ul class="dropdown-content">
+                    <li><a href="monthly-graphs.html">Monthly Graphs</a></li>
+                    <li><a href="category-graphs.html">Category Graphs</a></li>
+                </ul>
+            </li>
+        </ul>
+        <button id="toggleBtn">☰</button>
+    </nav>
+ 
+    <table class="container">
+        <tr>
+            <td colspan="2" class="header">
+                <h1>Category Graph</h1>
+            </td>
+        </tr>
+        <tr> 
+            <td class="graph">
+                <canvas id="categoryChart" width="400" height="200"></canvas>
+            </td>
+            <td class="imagine">
+                <img src="wishlist.jpg">
+            </td>
+        </tr>
+    </table>
+</body>
+</html>
